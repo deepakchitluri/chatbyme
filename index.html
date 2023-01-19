@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message4U</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/Message4U.jpg" alt="">
+            <h1>Message4U</h1>
+        </div>
+        <div class="message__area"></div>
+        <div class="bottomaction">
+            <textarea name="txtpop"id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+            <img  id="send"height=33 onclick="sendMessage(textarea.value)" src="/send.png" alt="">
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
